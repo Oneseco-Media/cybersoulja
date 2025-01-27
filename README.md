@@ -25,6 +25,26 @@ npm install
 
 ## Configuration
 
+### Environment Setup
+1. Copy `.env.example` to `.env`:
+```bash
+cp .env.example .env
+```
+
+2. Configure your environment variables:
+```env
+SUPABASE_URL=your_supabase_project_url
+SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+### Supabase Setup
+1. Sign up for a Supabase account at https://supabase.com
+2. Create a new project
+3. Copy your project URL and anon key to your `.env` file
+4. Initialize the Supabase client in your application
+
+### LM Studio Setup
+
 1. Start the LM Studio server:
 ```bash
 lms server start
@@ -63,6 +83,14 @@ async function generateResponse(prompt) {
 > Enter your prompt: What is artificial intelligence?
 > AI: Artificial intelligence refers to the simulation of human intelligence...
 ```
+
+## Deployment
+The application is deployed on Cloudflare Pages:
+- Production URL: https://supabase.oneseco.com
+- Automatic deployments from the main branch
+- Environment variables are configured in the Cloudflare dashboard
+
+For detailed deployment instructions, see DEPLOY.md.
 
 ## Development
 

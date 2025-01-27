@@ -9,7 +9,9 @@
   "author": "Your Name",
   "license": "UNLICENSED",
   "dependencies": {
-    "@lmstudio/sdk": "^0.0.12"
+    "@lmstudio/sdk": "^0.0.12",
+    "@notionhq/client": "^2.2.15",
+    "@supabase/supabase-js": "^2.48.1"
   },
   "gitHead": "eb198b1c427b6efc59a0589aed998492ce039d77",
   "devDependencies": {
